@@ -1,11 +1,16 @@
-function foo(a, b) {
-    console.log(a-b)
+function soma(valorA, valorB) {
+    if(valorA > 1){
+        return 1;
+    }
+    let total = valorA + valorB;
+    if(total < 5){
+        return total + 1;
+    }
+    return total;
 }
 
-function bar(a, b){
-    foo(a, b)
-    foo(b, a)
-}
 
-foo(3,2)
-bar(1,3)
+console.log(soma(soma(3, 1), soma(3, 1)));
+
+let x = soma(1, soma(3, 3 + 3));
+console.log(x)
